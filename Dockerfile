@@ -1,7 +1,8 @@
 FROM node:12.3-alpine as frontend
 
 WORKDIR /usr/src/app
-ADD src ./
+ADD srca ./
+RUN ls
 RUN npm install
 RUN npm run build
 

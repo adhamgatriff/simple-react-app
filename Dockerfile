@@ -5,7 +5,6 @@ ADD src ./
 RUN npm install
 RUN npm run build
 
-
 # server
 FROM nginx:1.12-alpine
 COPY --from=frontend /usr/src/app/build /usr/share/nginx/html
